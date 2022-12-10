@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    min-width: 320px;
+    position: relative;
+}
+
+main {
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.first-box {
+    position: relative;
+    background-image: url('../images/bg-pattern-card.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+}
+
+.first-box img {
+    position: absolute;
+    width: 90px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 45px);
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.second-box {
+    padding: 60px 20px 10px;
+    text-align: center;
+}
+
+.second-box h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: 10px;
+}
+
+.second-box h1 span {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+}
+
+.second-box p {
+    font-size: 1.4rem;
+    font-size: 400;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+.third-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.2);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.third-box h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.third-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--dark-gray);
+}
+
+.pattern-top {
+    position: absolute;
+    width: 50%;
+    height: 65%;
+    top: 0;
+    left: 0;
+    background-image: url(../images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.pattern-bottom {
+    position: absolute;
+    width: 50%;
+    height: 65%;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+@media (min-width: 900px) {
+    main {
+        width: 400px;
+    }
+
+    .first-box {
+        height: 160px;
+    }
+
+    .pattern-top {
+        height: 50%;
+    }
+    
+    .pattern-bottom {
+        height: 50%;
+    }
+}
