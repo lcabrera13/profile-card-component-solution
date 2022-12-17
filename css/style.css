@@ -24,9 +24,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark-cyan);
     min-width: 320px;
     position: relative;
+    background-color: var(--dark-cyan);
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 47vh;
 }
 
 main {
@@ -101,28 +104,6 @@ main {
     font-weight: 400;
     letter-spacing: 1px;
     color: var(--dark-gray);
-}
-
-.pattern-top {
-    position: absolute;
-    width: 50%;
-    height: 65%;
-    top: 0;
-    left: 0;
-    background-image: url(../images/bg-pattern-top.svg);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-}
-
-.pattern-bottom {
-    position: absolute;
-    width: 50%;
-    height: 65%;
-    bottom: 0;
-    right: 0;
-    background-image: url(../images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat;
-    background-position: top left;
 }
 
 @media (min-width: 900px) {
